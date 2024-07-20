@@ -1,0 +1,196 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+    --Lightred: hsl(0, 100%, 67%);
+    --Lightredtransp: hsla(0, 100%, 67%, 0.2);
+    --Orangeyyellowtransp: hsla(39, 100%, 56%, 0.2);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Greentealtransp: hsla(166, 100%, 37%, 0.2);
+    --Cobaltbluetransp: hsla(234, 85%, 45%, 0.2);
+    --Cobaltblue: hsl(234, 85%, 45%);
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-padding-inline-start: 10pt;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px #e3e3e3;
+}
+
+.result {
+    padding: 25px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+}
+
+/* border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    to center border radius*/
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.write {
+    justify-content: flex-start;
+    display: inline-flex;
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    align-content: space-between;
+    width: 230px;
+}
+
+/* div.contain {
+    color: aliceblue;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    border-width: 70%;
+    margin: 15%;
+    height: 100vh;
+    border-radius: 50px;
+}
+
+div#overlay {
+    padding-top: 90px;
+    border-radius: 90vh;
+    border: 90vh;
+    border-radius: 50px;
+} */
+.to-be-white {
+    color: var(--White);
+}
+
+.Great {
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+.hundred {
+    color: var(--Lightlavender);
+    font-weight: 900px;
+    font-size: 20px;
+    justify-content: flex-start;
+}
+
+#hundred {
+    font-size: medium;
+}
+
+.Summary {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 65%;
+}
+
+#Summary {
+    font-size: 20px;
+    color: var(--Darkgrayblue);
+    margin-bottom: 15px;
+}
+
+.reaction-inner,
+.Visual-inner,
+.Verbal-inner,
+.Memory-inner {
+    display: flex;
+    gap: 5px;
+}
+
+.reaction {
+    background-color: var(--Lightredtransp);
+}
+
+.Memory {
+    background-color: var(--Orangeyyellowtransp);
+}
+
+.Verbal {
+    background-color: var(--Greentealtransp);
+}
+
+.Verbal,
+.Visual,
+.Memory,
+.reaction {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Visual {
+    background-color: var(--Cobaltbluetransp);
+}
+
+span {
+    color: var(--Darkgrayblue);
+}
+
+button {
+    border-radius: 25px;
+    border: none;
+    background-color: var(--Darkgrayblue);
+    padding: 10px;
+    margin-top: 35px;
+    color: var(--White);
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+#react {
+    color: var(--Lightred);
+}
+
+#memory {
+    color: var(--Orangeyyellow);
+}
+
+#verbal {
+    color: var(--Greenteal);
+}
+
+#visual {
+    color: var(--Cobaltblue);
+}
